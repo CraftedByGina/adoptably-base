@@ -4,8 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Perfect Paw</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header class="site-header">
+        <div class="brand">
+            <img class="brand-icon" src="./public/icons/paw.svg" alt="" >
+            <span>The Perfect Paw</span>
+        </div>
+        <nav class="main-nav" aria-label="Primary">
+            <a href="#">Adoptable Pets</a>
+            <a href="#">Adoption Course</a>
+            <a href="#">Donate</a>
+        </nav>
+        <button class="btn btn-outline">Admin Login</button>
+    </header>
+
+    <main>
+        <section class="intro section-wrap">
+            <div class="intro-copy">
+                <h1>Find Your New Best Friend</h1>
+                <p>
+                    We rescue dogs and cats from high-kill shelters and help them find loving forever homes.
+                    Start your adoption journey today.
+                </p>
+                <div class="intro-actions">
+                    <button class="btn btn-dark">
+                        Adopt a Dog
+                        <img class="icon-heart" src="./public/icons/heart.svg" alt="" aria-hidden="true">
+                    </button>
+                    <button class="btn btn-outline">Learn About Adoption</button>
+                </div>
+            </div>
+            <div class="image-frame" aria-hidden="true">
+                <img src="./public/icons/family.png" alt="" aria-hidden="true">
+            </div>
+        </section>
+        
+        <section class="featured section-wrap">
+            <header class="featured__header">
+                <h2 id="featured-title">Featured Pets</h2>
+            </header>
+            <div class="featured__cards">
+                <article class="dog-card">
+                    <div class="dog-card__media" aria-hidden="true">
+                        <img src="./public/icons/dog.png" alt="" aria-hidden="true">
+                    </div>
+                    <div class="dog-card__body">
+                        <h3>Buddy</h3>
+                        <p class="dog-card__meta">Age: 2 years</p>
+                        <button class="btn btn-dark btn-small">Meet Buddy</button>
+                    </div>
+                </article>
+                <article class="dog-card">
+                    <div class="dog-card__media" aria-hidden="true">
+                        <img src="./public/icons/cat.png" alt="" aria-hidden="true">
+                    </div>
+                    <div class="dog-card__body">
+                        <h3>Luna</h3>
+                        <p class="dog-card__meta">Age: 1 year</p>
+                        <button class="btn btn-dark btn-small">Meet Luna</button>
+                    </div>
+                </article>
+                <article class="dog-card">
+                    <div class="dog-card__media" aria-hidden="true">
+                        <img src="./public/icons/dog.png" alt="" aria-hidden="true">
+                    </div>
+                    <div class="dog-card__body">
+                        <h3>Max</h3>
+                        <p class="dog-card__meta">Age: 4 years</p>
+                        <button class="btn btn-dark btn-small">Meet Max</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="steps">
+            <a href="#" class="view-all">
+                View All Pets
+                <span aria-hidden="true">→</span>
+            </a>
+            <div class="steps-wrap section-wrap">
+                <h2>How Adoption Works</h2>
+                <div class="steps-grid">
+                    <article>
+                        <span class="step-badge">01</span>
+                        <h3>Browse Dogs</h3>
+                        <p>Find a dog that matches your lifestyle.</p>
+                    </article>
+                    <article>
+                        <span class="step-badge">02</span>
+                        <h3>Take Course</h3>
+                        <p>Complete our short adoption education course.</p>
+                    </article>
+                    <article>
+                        <span class="step-badge">03</span>
+                        <h3>Apply</h3>
+                        <p>Submit your application for review.</p>
+                    </article>
+                    <article>
+                        <span class="step-badge">04</span>
+                        <h3>Meet &amp; Greet</h3>
+                        <p>Meet your potential new family member.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="course section-wrap">
+            <div class="course-copy">
+                <p class="eyebrow">
+                    <img class="icon-check" src="./public/icons/check-circle.svg" alt="" aria-hidden="true">
+                    Required Step
+                </p>
+                <h2>Adoption Education Course</h2>
+                <p>
+                    Before applying, we ask all potential adopters to complete a free 15-minute
+                    course on responsible pet ownership. It ensures our dogs and cats go to prepared,
+                    forever homes.
+                </p>
+                <button class="btn btn-light">Start Course Now</button>
+            </div>
+            <div class="image-frame image-frame-dark" aria-hidden="true">
+                <img src="./public/icons/course2.png" alt="" aria-hidden="true">
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner section-wrap">
+            <div class="site-footer__brand">
+                <div class="footer-brand">
+                    <img class="footer-brand__icon" src="./public/icons/paw.svg" alt="" >
+                    <span class="footer-brand__name">The Perfect Paw</span>
+                </div>
+                <p class="site-footer__blurb">
+                    Connecting loving families with dogs and cats in need since 2026.
+                </p>
+            </div>
+
+            <nav class="site-footer__nav" aria-label="Footer">
+                <div class="footer-col">
+                    <h3>Adopt</h3>
+                    <a href="#">View Dogs</a>
+                    <a href="#">Adoption Course</a>
+                    <a href="#">Application</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Get Involved</h3>
+                    <a href="#">Volunteer</a>
+                    <a href="#">Foster</a>
+                    <a href="#">Donate</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <a href="mailto:info@theperfectpaw.org">info@theperfectpaw.org</a>
+                    <a href="tel:+15551234567">(555) 123-4567</a>
+                    <span class="footer-text">123 Rescue Lane</span>
+                </div>
+            </nav>
+        </div>
+
+        <div class="site-footer__divider" aria-hidden="true"></div>
+        <p class="site-footer__legal">© 2026 The Perfect Paw. All rights reserved.</p>
+    </footer>
 </body>
 </html>
