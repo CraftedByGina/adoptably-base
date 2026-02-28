@@ -7,6 +7,7 @@ body {
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     background: #f2f2f2;
     color: #2c2c31;
+    --pp-title: #0F2A44;
 }
 
 .section-wrap {
@@ -21,7 +22,6 @@ body {
     justify-content: space-between;
     gap: 20px;
     padding: 16px 48px;
-    border-bottom: 1px solid #d0d0d0;
     background: #f6f6f7;
 }
 
@@ -33,6 +33,7 @@ body {
     font-size: 34px;
     line-height: 1;
     font-weight: 700;
+    color: var(--pp-title);
 }
 
 .brand-icon {
@@ -46,7 +47,7 @@ body {
 }
 
 .main-nav a {
-    color: #5f6065;
+    color: #0F2A44;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -78,8 +79,73 @@ body {
     flex: 1 1 560px;
 }
 
-.intro .image-frame {
+.intro-media {
     flex: 0 1 48%;
+    min-width: 360px;
+}
+
+.intro-stack {
+    position: relative;
+    height: 560px;
+}
+
+.intro-frame {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 28px;
+    box-shadow: 0 18px 40px rgba(15, 42, 68, 0.12);
+    border: 1px solid rgba(46, 95, 138, 0.22);
+}
+
+.intro-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.intro-frame--top {
+    top: 0;
+    right: 0;
+    width: min(520px, 92%);
+    height: 220px;
+    border-radius: 32px;
+    background: linear-gradient(135deg, rgba(118, 183, 197, 0.45), rgba(76, 162, 181, 0.10));
+}
+
+.intro-frame--bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    border-radius: 36px;
+    background: linear-gradient(135deg, rgba(245, 224, 183, 0.42), rgba(239, 118, 122, 0.10));
+}
+
+.intro-stat {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding: 14px 16px;
+    border-radius: 18px;
+    background: rgba(237, 227, 228, 0.62);
+    border: 1px solid rgba(239, 118, 122, 0.18);
+    backdrop-filter: blur(10px);
+}
+
+.intro-stat__num {
+    display: block;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #0F2A44;
+}
+
+.intro-stat__label {
+    display: block;
+    margin-top: 4px;
+    font-size: 16px;
+    color: rgba(15, 42, 68, 0.72);
 }
 
 .intro-copy h1 {
@@ -88,7 +154,7 @@ body {
     font-size: clamp(56px, 6vw, 104px);
     line-height: 0.95;
     letter-spacing: -0.02em;
-    color: #2f3034;
+    color: var(--pp-title);
 }
 
 .intro-copy p {
@@ -107,7 +173,7 @@ body {
 }
 
 .btn-dark {
-    background: #2f3034;
+    background: #ef767a;
     color: #f6f6f6;
     display: flex;
     align-items: center;
@@ -143,12 +209,13 @@ body {
 
 .course {
     margin-top: 34px;
-    background: #2f3034;
+    background: #2e5f8a;
     border-radius: 24px;
     padding: 58px;
     display: flex;
     align-items: stretch;
     gap: 62px;
+
 }
 
 .course-copy {
@@ -216,8 +283,6 @@ body {
 
 .steps {
     margin-top: 74px;
-    border-top: 1px solid #d0d0d0;
-    border-bottom: 1px solid #d0d0d0;
     padding-bottom: 80px;
 }
 
@@ -229,7 +294,7 @@ body {
     margin: 0 0 22px;
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(34px, 3.2vw, 52px);
-    color: #2f3034;
+    color: var(--pp-title);
 }
 
 .featured__cards {
@@ -277,7 +342,7 @@ body {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 28px;
-    color: #2f3034;
+    color: var(--pp-title);
 }
 
 .dog-card__meta {
@@ -308,7 +373,7 @@ body {
     text-align: center;
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(46px, 4.4vw, 78px);
-    color: #2f3034;
+    color: var(--pp-title);
 }
 
 .steps-grid {
@@ -340,7 +405,7 @@ body {
     margin: 18px 0 0;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 30px;
-    color: #35363a;
+    color: var(--pp-title);
 }
 
 .steps-grid p {
@@ -405,7 +470,7 @@ body {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 34px;
-    color: #2f3034;
+    color: var(--pp-title);
 }
 
 .footer-col a,
@@ -493,6 +558,23 @@ body {
         align-items: stretch;
     }
 
+    .intro-media {
+        min-width: 0;
+    }
+
+    .intro-stack {
+        height: 440px;
+    }
+
+    .intro-frame--top {
+        height: 190px;
+        width: min(520px, 100%);
+    }
+
+    .intro-frame--bottom {
+        height: 260px;
+    }
+
     .image-frame {
         min-height: 340px;
     }
@@ -563,6 +645,24 @@ body {
 
     .intro {
         padding-top: 28px;
+    }
+
+    .intro-stack {
+        height: 380px;
+    }
+
+    .intro-frame--top {
+        height: 160px;
+        border-radius: 24px;
+    }
+
+    .intro-frame--bottom {
+        height: 240px;
+        border-radius: 28px;
+    }
+
+    .intro-stat__num {
+        font-size: 32px;
     }
 
     .intro-copy p {

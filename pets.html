@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Perfect Paw</title>
+    <link rel="stylesheet" href="pets.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="./index.html" aria-label="The Perfect Paw home">
+            <img class="brand-icon" src="public/icons/paw.svg" alt="" aria-hidden="true">
+            <span class="brand-name">The Perfect Paw</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Primary">
+            <a class="is-active" href="./pets.html">Adoptable Pets</a>
+            <a href="#">Adoption Course</a>
+            <a href="#">Donate</a>
+            <a href="#">Volunteer</a>
+        </nav>
+
+        <a class="btn btn-outline" href="#">Admin Login</a>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <div class="container">
+                <h1>Adoptable Pets</h1>
+                <p>
+                    Meet our wonderful dogs and cats waiting for their forever homes. Use the filters to find a match
+                    for your lifestyle.
+                </p>
+            </div>
+        </section>
+
+        <section class="page-body">
+            <div class="container layout">
+                <aside class="sidebar" aria-label="Filters">
+                    <label class="search">
+                        <span class="search-icon" aria-hidden="true"></span>
+                        <input type="search" placeholder="Search by name..." aria-label="Search by name">
+                    </label>
+
+                    <div class="filters-head">
+                        <h2>Filters</h2>
+                    </div>
+                    <div class="rule" aria-hidden="true"></div>
+
+                    <div class="filter-group">
+                        <h3>Age</h3>
+                        <label class="check">
+                            <input type="checkbox">
+                            <span>Puppy (&lt; 1 yr)</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox">
+                            <span>Young (1-3 yrs)</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox">
+                            <span>Adult (3-8 yrs)</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox">
+                            <span>Senior (8+ yrs)</span>
+                        </label>
+                    </div>
+
+                    <div class="rule" aria-hidden="true"></div>
+
+                    <div class="filter-group">
+                        <h3>Size</h3>
+                        <label class="check">
+                            <input type="checkbox">
+                            <span>Small</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox">
+                            <span>Medium</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox">
+                            <span>Large</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox">
+                            <span>X-Large</span>
+                        </label>
+                    </div>
+                </aside>
+
+                <section class="cards" aria-label="Pets list">
+                    <article class="pet-card">
+                        <div class="pet-media">
+                            <img src="public/icons/dog.png"" alt=" Dog photo placeholder">
+                        </div>
+                        <div class="pet-body">
+                            <div class="pet-top">
+                                <h3>Buddy</h3>
+                                <p class="pet-meta">Male, 2 yrs</p>
+                            </div>
+                            <div class="pet-tags" aria-label="Traits">
+                                <span class="tag">Friendly</span>
+                                <span class="tag">Active</span>
+                            </div>
+                            <a class="btn btn-outline btn-wide" href="#">Interested</a>
+                        </div>
+                    </article>
+
+                    <article class="pet-card">
+                        <div class="pet-media">
+                            <img src="public/icons/cat.png" alt="Cat photo placeholder">
+                        </div>
+                        <div class="pet-body">
+                            <div class="pet-top">
+                                <h3>Luna</h3>
+                                <p class="pet-meta">Female, 1 yr</p>
+                            </div>
+                            <div class="pet-tags" aria-label="Traits">
+                                <span class="tag">Sweet</span>
+                                <span class="tag">Calm</span>
+                            </div>
+                            <a class="btn btn-outline btn-wide" href="#">Interested</a>
+                        </div>
+                    </article>
+
+                    <article class="pet-card">
+                        <div class="pet-media">
+                            <img src="public/icons/dog.png" alt="Dog photo placeholder">
+                        </div>
+                        <div class="pet-body">
+                            <div class="pet-top">
+                                <h3>Max</h3>
+                                <p class="pet-meta">Male, 3 yrs</p>
+                            </div>
+                            <div class="pet-tags" aria-label="Traits">
+                                <span class="tag">Gentle</span>
+                                <span class="tag">Goofy</span>
+                            </div>
+                            <a class="btn btn-outline btn-wide" href="#">Interested</a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
